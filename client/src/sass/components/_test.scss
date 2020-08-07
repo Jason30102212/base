@@ -1,0 +1,177 @@
+@keyframes test_dropdown_animation {
+  0% {height: 0rem;}
+  75% {height: 0rem;}
+  100% {height: 100rem;}
+}
+
+@keyframes test_heading_animation {
+  0% {left: -40rem;}
+  25%{left: -40rem}
+  100% {left: 0rem;}
+}
+
+@keyframes typing {
+  from { opacity: 0; width: 0; display: contents; font-size: 1rem;}
+  to { opacity: 1; width: 100%; display: contents; font-size: 1rem;}
+}
+
+@keyframes mongodb-demo-container-animation {
+  0% {  opacity: 0; display: contents; height: 0rem;}
+  100% {  opacity: 1; display: contents; min-height: 100%; }
+}
+
+
+.test_wrapper {
+  width: 60rem;
+  margin-bottom: 3rem;
+
+  &__inner {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: $color-primary-light;
+    padding: 3rem 0rem;
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__status {
+    & > div {
+      & > p {
+        font-size: 1.5rem;
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__heading {
+    color: $color-primary-dark;
+    margin: 0.5rem 0rem;
+  }
+
+  &__status {
+    margin: 3rem 0rem;
+  }
+
+  &__right {
+    width: 50%;
+    padding: 0rem 3rem;
+  }
+
+  &__mongodb-demo-heading {
+    color: $color-primary-dark;
+    margin: 0.5rem 0rem;
+  }
+
+  &__mongodb-demo-explanation {
+  }
+
+  &__mongodb-demo-container {
+    width: 100%;
+    color: $color-primary;
+
+  }
+}
+
+// .test_wrapper {
+//   position: relative;
+//   width: 30rem;
+//   height: 100%;
+//   animation-name: test_dropdown_animation;
+//   animation-duration: 2s;
+//   animation-fill-mode: forwards;
+//
+//
+//   &__inner {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     height: 100%;
+//     left: 0;
+//   }
+//
+//   &__status {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: baseline;
+//     padding: 0rem 3rem;
+//   }
+//
+//   &__heading {
+//     margin: 0;
+//     padding: 3rem;
+//     position: relative;
+//     left:0rem;
+//     animation-name: test_heading_animation;
+//     animation-duration: 6s;
+//   }
+//
+//   &__backend-boilerplate-created {
+//     overflow: hidden; /* Ensures the content is not revealed until the animation */
+//     white-space: nowrap; /* Keeps the content on a single line */
+//     font-size: 0;
+//     -webkit-animation-duration: 5s;
+//     -webkit-animation:
+//       typing 2.5s steps(40, end);
+//     animation-delay:4s;
+//     -webkit-animation-delay:4s; /* Safari and Chrome */
+//     animation-fill-mode: forwards;
+//   }
+//
+//   &__frontend-boilerplate-created {
+//     overflow: hidden; /* Ensures the content is not revealed until the animation */
+//     white-space: nowrap; /* Keeps the content on a single line */
+//     font-size: 0;
+//     -webkit-animation-duration: 5s;
+//     -webkit-animation:
+//       typing 2.5s steps(40, end);
+//     animation-delay:4.5s;
+//     -webkit-animation-delay:4.5s; /* Safari and Chrome */
+//     animation-fill-mode: forwards;
+//   }
+//
+//
+//   &__sass-implemented {
+//     overflow: hidden; /* Ensures the content is not revealed until the animation */
+//     white-space: nowrap; /* Keeps the content on a single line */
+//     font-size: 0;
+//     -webkit-animation-duration: 5s;
+//     -webkit-animation:
+//       typing 2.5s steps(40, end);
+//     animation-delay:5s;
+//     -webkit-animation-delay:5s; /* Safari and Chrome */
+//     animation-fill-mode: forwards;
+//   }
+//
+//   &__mongodb-initiated {
+//     overflow: hidden; /* Ensures the content is not revealed until the animation */
+//     white-space: nowrap; /* Keeps the content on a single line */
+//     font-size: 0;
+//     -webkit-animation-duration: 5s;
+//     -webkit-animation:
+//       typing 2.5s steps(40, end);
+//     animation-delay:5.5s;
+//     -webkit-animation-delay:5.5s; /* Safari and Chrome */
+//     animation-fill-mode: forwards;
+//   }
+//
+//   &__mongodb-demo-container {
+//     position: inherit;
+//     opacity: 0;
+//     background-color: $color-primary-light;
+//     width: 100%;
+//     -webkit-animation-duration: 5s;
+//     animation-name:
+//       mongodb-demo-container-animation;
+//     -webkit-animation-name:
+//       mongodb-demo-container-animation;
+//     animation-delay:5.5s;
+//     animation-fill-mode: forwards;
+//   }
+//
+//   &__mongodb-demo-heading {
+//     padding: 3rem;
+//   }
+// }

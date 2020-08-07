@@ -1,0 +1,66 @@
+@keyframes test_dropdown_animation {
+  0% {
+    height: 0rem; }
+  75% {
+    height: 0rem; }
+  100% {
+    height: 100rem; } }
+
+@keyframes test_heading_animation {
+  0% {
+    left: -40rem; }
+  25% {
+    left: -40rem; }
+  100% {
+    left: 0rem; } }
+
+@keyframes typing {
+  from {
+    opacity: 0;
+    width: 0;
+    display: contents;
+    font-size: 1rem; }
+  to {
+    opacity: 1;
+    width: 100%;
+    display: contents;
+    font-size: 1rem; } }
+
+@keyframes mongodb-demo-container-animation {
+  0% {
+    opacity: 0;
+    display: contents;
+    height: 0rem; }
+  100% {
+    opacity: 1;
+    display: contents;
+    min-height: 100%; } }
+
+.test_wrapper {
+  width: 60rem;
+  margin-bottom: 3rem; }
+  .test_wrapper__inner {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #ebebeb;
+    padding: 3rem 0rem; }
+  .test_wrapper__left {
+    width: 50%; }
+  .test_wrapper__status > div > p {
+    font-size: 1.5rem;
+    color: #606060; }
+  .test_wrapper__heading {
+    color: #0A2932;
+    margin: 0.5rem 0rem; }
+  .test_wrapper__status {
+    margin: 3rem 0rem; }
+  .test_wrapper__right {
+    width: 50%;
+    padding: 0rem 3rem; }
+  .test_wrapper__mongodb-demo-heading {
+    color: #0A2932;
+    margin: 0.5rem 0rem; }
+  .test_wrapper__mongodb-demo-container {
+    width: 100%;
+    color: #606060; }
