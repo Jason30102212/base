@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { GET_TEST_CONTENTS } from './types'
-import { UPDATE_TEST_CONTENT } from './types'
 
 export const getTestContents = () => dispatch => {
   axios

@@ -5,7 +5,6 @@ const passport = require('passport')
 const path = require('path')
 const crypto = require('crypto')
 
-
 // API routes go here
 const test = require('./routes/api/test')
 const users = require('./routes/api/users')
@@ -17,7 +16,12 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // DB Config
-const db = require('./config/keys').mongoURI
+let db
+if(process.env.NODE_ENV === 'production'){
+  db = "mongodb+srv://test:"+process.env.mongodb_password+"@cluster0.czudk.mongodb.net/"+process.env.mongodb_name+"?retryWrites=true&w=majority"
+} else {
+  db = require('./config/keys').mongoURI
+}
 
 // Connect to mongoose
 mongoose
@@ -34,6 +38,7 @@ app.use('/api/users', users)
 
 // Passport Config
 require('./config/passport')(passport)
+
 
 // Server static assets in production
 if(process.env.NODE_ENV === 'production') {
