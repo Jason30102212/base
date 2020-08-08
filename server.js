@@ -19,7 +19,7 @@ app.use(bodyParser.json())
 let db
 if(process.env.NODE_ENV === 'production'){
   db = "mongodb+srv://test:"+process.env.mongodb_password+"@cluster0.czudk.mongodb.net/"+process.env.mongodb_name+"?retryWrites=true&w=majority"
-  console.log("NODE_ENV. db variable is: " db);
+  console.log("NODE_ENV. db variable is: ", db);
 } else {
   db = require('./config/keys').mongoURI
 }
